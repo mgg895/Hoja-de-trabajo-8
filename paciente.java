@@ -20,25 +20,25 @@ public class paciente implements Comparable<String> {
      
     }
     
-    public String getnombre(){
+    public String getNombre(){
         return nombre;
     }
     
-    public void setnombre(int nombre){
+    public void setNombre(int nombre){
         this.nombre = nombre;
     }
-    public String getcondicion(){
+    public String getCondicion(){
         return condicion;
     }
     
-    public void setcondicion(int condicion){
+    public void setCondicion(int condicion){
         this.condicion = condicion;
     }
-    public String getcodigo(){
+    public String getCodigo(){
         return codigo;
     }
     
-    public void setcodigo(int codigo){
+    public void setCodigo(int codigo){
         this.codigo = codigo;
     }
     
