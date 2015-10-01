@@ -1,28 +1,34 @@
 import java.lang.Comparable;
-public class paciente implements Comparable<char> {
+public class paciente implements Comparable<String> {
     
     private String nombre;
     private String condicion;
-    private char codigo;
+    private String codigo;
     
-    public paciente(String nombre, String condicion, char codigo){
+    public paciente(String nombre, String condicion, String codigo){
         nombre = this.nombre;
         condicion = this.condicion;
         codigo = this.codigo;
     }
 
     @Override
-    public int compareTo(char otroCodigo) {
-        if (codigo==otroCodigo){
+    public int compareTo(String valor) {
+        char esteCodigo = codigo.charAt(0);
+        char otroCodigo = valor.charAt(0);
+        if (esteCodigo==otroCodigo){
             return 0;
         }
-        else if (codigo>otroCodigo){
+        else if (esteCodigo>otroCodigo){
             return 1;
         }
         else{
             return -1;
         }
     }
-    
+    @Override
+    public String toString(){
+        String a = nombre + " " + condicion + " " + codigo;
+        return a;
+    }
     
 }
