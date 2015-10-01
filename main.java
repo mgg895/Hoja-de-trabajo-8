@@ -1,8 +1,9 @@
-# Hoja-de-trabajo-8
+// Hoja-de-trabajo-8
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.*;
 import java.util.Arrays;
+import java.util.List;
 
 public class main {
 
@@ -63,12 +64,28 @@ public class main {
       paciente Paciente3 = new paciente(paciente3[0],paciente3[1],paciente3[2]);
       paciente Paciente4 = new paciente(paciente4[0],paciente4[1],paciente4[2]);
       
-      VectorHeap heap = new VectorHeap();
-      heap.add(Paciente1);
-      heap.add(Paciente2);
-      heap.add(Paciente3);
-      heap.add(Paciente4);
-      paciente [] ArrayHeap = (paciente[]) heap.toArray();
-      System.out.println(ArrayHeap[1].toString());
-   }
-}
+      /*Info info1 = new Info(paciente1[0],paciente1[1],paciente1[2]);
+	  Info info2 = new Info(paciente2[0],paciente2[1],paciente2[2]);
+	  Info info3 = new Info(paciente3[0],paciente3[1],paciente3[2]);
+	  Info info4 = new Info(paciente4[0],paciente4[1],paciente4[2]);
+	  
+	  List<Info> listado = new ArrayList<Info>();
+	  listado.add(info1);
+	  listado.add(info2);
+	  listado.add(info3);
+	  listado.add(info4);
+	  
+	  System.out.println("Listado de pacientes ordenados:");
+	Collections.sort(listado);
+	   for (int i = 0; i < listado.size(); i++) {
+            Info info=(Info) listado.get(i);
+                System.out.println("Nombre:" +Info.getNombre()+ "Condicion:"+Info.getCondicion()+ "Codigo:"+Info.getCodigo());
+            }
+            
+*/
+	  
+
+	  }
+
+	  
+	  }
