@@ -1,6 +1,6 @@
 import java.lang.Comparable;
 import java.util.PriorityQueue;
 
-public class VectorHeap <E extends Comparable<E>> extends PriorityQueue<E>  {
+public class VectorHeap <paciente extends Comparable<paciente>> extends PriorityQueue<paciente>  {
     
 }
